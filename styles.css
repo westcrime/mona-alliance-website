@@ -1,0 +1,71 @@
+:root {
+    --bg-color: #F7F7F7;
+    --main-color: white;
+    --secondary-color: #213966;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+  
+body {
+    font-family: 'Montserrat';
+    background-color: var(--bg-color);
+}
+
+/* Навбар */
+
+.navbar {
+    background-color: var(--main-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Расположить элементы по краям контейнера */
+    align-items: center; /* Центрирование по вертикали */
+    height: 125px;
+}
+
+.navbar .logo {
+    margin-left: 3%;
+    height: 100%;
+}
+
+.navbar .right-side-part {
+    height: 66%;
+    margin-right: 3%;
+    display: flex;
+    gap: 20px; /* Промежуток между элементами */
+    align-items: center; /* Центрирование по вертикали */
+}
+
+.navbar .right-side-part img {
+    height: 100%;
+}
+
+.navbar .right-side-part .left-column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Максимальное расстояние между строками */
+}
+
+.navbar .right-side-part .left-column .navbar-text {
+    font-size: 28px;
+    font-family: 'Sansation Light';
+    text-align: end;
+    text-decoration: underline;
+}
+
+/* Медиазапрос для маленьких экранов */
+@media (max-width: 600px) {
+    .navbar {
+        height: 50px; /* Высота навбара увеличивается на маленьких экранах */
+    }
+
+    .navbar .right-side-part .left-column .navbar-text {
+        font-size: 16px; /* Увеличение размера шрифта на маленьких экранах */
+    }
+}
+
+/* Конец навбара */
+
