@@ -10,8 +10,41 @@
 }
   
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--bg-color);
+}
+
+.button {
+  background-color: var(--secondary-color);
+  border-radius: 0;
+  border-style: none;
+  box-sizing: border-box;
+  color: var(--main-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  width: fit-content;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #132444;
 }
 
 .header {
@@ -90,12 +123,58 @@ body {
 .main-banner {
     width: 100%;
     height: 500px;
+    position: relative; /* Позволяет позиционировать элементы внутри баннера */
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: start;
 }
 
-.main-banner img {
+.main-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;	
+    background: url('./images/back.png') no-repeat center center;
+    background-size: cover; /* Заполнение фона изображением */
+    opacity: 0.6; /* Прозрачность фона */
+    z-index: 1; /* Размещает псевдоэлемент позади содержимого */
+}
+
+.main-banner .container {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    height: 85%;
+    width: 60%;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.main-banner .container .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 33%;
+    justify-content: center;
+}
+
+.main-banner .container .row span {
+    font-weight: 600;
+}
+
+.main-banner .container .row .name-text {
+    font-size: 48px;
+}
+
+.main-banner .container .row .secondary-name-text {
+    font-size: 36px;
+}
+
+.main-banner .container .row .usual-text {
+    font-size: 24px;
 }
 
 /* Медиазапрос для маленьких экранов */
