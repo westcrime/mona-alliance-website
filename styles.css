@@ -14,6 +14,22 @@ body {
     background-color: var(--bg-color);
 }
 
+.header {
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 24px;
+    }
+}
+
 /* Навбар */
 
 .navbar {
@@ -69,6 +85,38 @@ body {
 
 /* Конец навбара */
 
+/* Начало главного баннера */
+
+.main-banner {
+    width: 100%;
+    height: 500px;
+}
+
+.main-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;	
+}
+
+/* Медиазапрос для маленьких экранов */
+@media (max-width: 600px) {
+    .advantage-card {
+        height: 150px;
+        width: 150px;
+    }
+
+    .advantage-card .icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .advantage-card .text {
+        font-size: 12px;
+    }
+}
+
+/* Конец главного баннера */
+
 /* Начало карточек преимуществ */
 
 .advantages {
@@ -76,10 +124,10 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    gap: 5%
+    gap: 5%;
 }
 
 .advantage-card {
@@ -92,8 +140,10 @@ body {
 
 .advantage-card .icon {
     margin-left: auto;
+    height: 60px;
+    width: 60px;
     margin-right: auto;
-    margin-top: -67%;
+    margin-top: -75%;
 }
 
 .advantage-card .text {
@@ -113,6 +163,23 @@ body {
     height: 3px;
     background-color: var(--secondary-color);
     margin-top: auto;
+}
+
+/* Медиазапрос для маленьких экранов */
+@media (max-width: 600px) {
+    .advantage-card {
+        height: 150px;
+        width: 150px;
+    }
+
+    .advantage-card .icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .advantage-card .text {
+        font-size: 12px;
+    }
 }
 
 /* Конец карточек преимуществ */
