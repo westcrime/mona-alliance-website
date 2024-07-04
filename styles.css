@@ -69,3 +69,50 @@ body {
 
 /* Конец навбара */
 
+/* Начало карточек преимуществ */
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5%
+}
+
+.advantage-card {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    width: 300px;
+}
+
+.advantage-card .icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -67%;
+}
+
+.advantage-card .text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50%;
+    height: 50%;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.advantage-card .line {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin-top: auto;
+}
+
+/* Конец карточек преимуществ */
