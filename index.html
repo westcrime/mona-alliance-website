@@ -1,186 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>My Website</title>
-        <link rel="stylesheet" href="./styles.css">
-        <link href="https://fonts.cdnfonts.com/css/sansation-light" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    </head>
-    <body>
-        <!-- Начало навбара -->
-        <div class="navbar">
-            <img
-                class="logo"
-                src="./images/logo.svg"
-                alt="MONA logo"/>
-            <div class="right-side-part">
-                <div class="left-column">
-                    <div class="navbar-text" style="text-decoration: none;">375 (29) 391-01-02</div>
-                    <div class="navbar-text">Пн-Пт — с 10:00 до 18:00</div>
-                </div>
-                <img
-                    src="./images/telegram.svg"
-                    alt="telegram"/>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>МОНА Альянс - Налоговые консультанты, аудиторы и бухгалтеры</title>
+    <meta name="description" content="МОНА Альянс предлагает профессиональные бухгалтерские и налоговые услуги, аудиторские услуги и обучающие курсы.">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.cdnfonts.com/css/sansation-light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Начало навбара -->
+    <header class="navbar">
+        <img class="logo" src="./images/logo.svg" alt="MONA logo"/>
+        <div class="right-side-part">
+            <div class="left-column">
+                <p class="navbar-text" style="text-decoration: none;">375 (29) 391-01-02</p>
+                <p class="navbar-text">Пн-Пт — с 10:00 до 18:00</p>
+            </div>
+            <img src="./images/telegram.svg" alt="telegram"/>
+        </div>
+    </header>
+    <!-- Конец навбара -->
+
+    <!-- Начало главного баннера -->
+    <section class="main-banner">
+        <div class="container">
+            <div class="row">
+                <h1 class="name-text">МОНА Альянс</h1>
+                <p class="secondary-name-text">— объединение налоговых консультантов, аудиторов и бухгалтеров</p>
+            </div>
+            <div class="row">
+                <p class="usual-text">Опыт и профессионализм в поиске простых решений для сложных задач!</p>
+            </div>
+            <div class="row">
+                <button class="button" style="margin-top: -50px;">Связаться</button>
             </div>
         </div>
-        <!-- Конец навбара -->
+    </section>
+    <!-- Конец главного баннера -->
 
-        <!-- Начало главного баннера -->
-        <div class="main-banner">
-            <div class="container">
-                <div class="row">
-                    <span class="name-text">МОНА Альянс</span>
-                    <span class="secondary-name-text">— объединение налоговых консультантов, 
-                        аудиторов и бухгалтеров</span>
-                </div>
-                <div class="row">
-                    <span class="usual-text">Опыт и профессионализм в поиске простых решений для сложных задач!</span>
-                </div>
-                <div class="row">
-                    <button class="button" style="margin-top: -50px;">
-                        Связаться
-                    </button>
-                </div>
+    <!-- Начало услуг -->
+    <section style="width: 100%; height: fit-content; margin-top: 7vw; background-color: white; padding-top: 1vw; padding-bottom: 6vw;">
+        <h2 class="header">Наши услуги</h2>
+        <div class="container-for-services">
+            <div class="column-for-info" style="align-items: end;">
+                <article class="info-element">
+                    <h3 class="title-of-service">Бухгалтерские услуги для всех типов бизнеса</h3>
+                    <p class="usual-text-of-service">
+                        Мы предлагаем готовые решения для постановки и автоматизации учета. Наша команда профессионалов в области финансового и юридического сопровождения поможет Вам сэкономить ресурсы и время на развитие бизнеса.
+                    </p>
+                </article>
+                <article class="info-element">
+                    <h3 class="title-of-service">Налоговое консультирование по вопросам бухгалтерского и налогового учета</h3>
+                    <p class="usual-text-of-service">
+                        Трудно разбираться в нормативно-правовых актах и находить ответы на возникающие вопросы? Мы сделаем это за Вас и доступно объясним, как применять действующее законодательство на практике.
+                    </p>
+                </article>
+                <article class="info-element">
+                    <h3 class="title-of-service">Регистрация, ликвидация и реорганизация юридических лиц и ИП</h3>
+                    <p class="usual-text-of-service">
+                        Создайте свой бизнес с нуля правильно: мы поможем с сопровождением процесса реорганизации, а также с быстрым закрытием действующего юридического лица или ИП.
+                    </p>
+                </article>
+                <article class="info-element">
+                    <h3 class="title-of-service">Обучающие курсы</h3>
+                    <p class="usual-text-of-service">
+                        Мы предлагаем не только качественные услуги, но и возможность развития, делясь с Вами нашим опытом и знаниями. Кроме того, у нас доступны обучающие курсы, которые помогут Вам совершенствоваться и уверенно вести бизнес.
+                    </p>
+                </article>
+            </div>
+            <div class="column-for-line">
+                <div class="vertical-line"></div>
+            </div>
+            <div class="column-for-info" style="align-items: start;">
+                <article class="info-element">
+                    <h3 class="title-of-service">Ведение учета ИП, физических лиц</h3>
+                    <p class="usual-text-of-service">
+                        Если у Вас не хватает времени на ведение учета ИП, или возникла необходимость задекларировать доходы и предоставить пояснения контролирующим органам, мы профессионально и быстро решим эти задачи за Вас.
+                    </p>
+                </article>
+                <article class="info-element">
+                    <h3 class="title-of-service">Восстановление бухгалтерского и налогового учета</h3>
+                    <p class="usual-text-of-service">
+                        Мы «реанимируем» Ваш бизнес, наладим текущие процессы и обеспечим быстрое и качественное восстановление бухгалтерского и налогового учета.
+                    </p>
+                </article>
+                <article class="info-element">
+                    <h3 class="title-of-service">Аудиторские услуги</h3>
+                    <p class="usual-text-of-service">
+                        Наше сотрудничество с опытными и высококвалифицированными аудиторами позволяет нам оперативно реагировать на изменения законодательства, а также предоставить Вам доступ к консультациям и аудиторским услугам.
+                    </p>
+                </article>
             </div>
         </div>
-        <!-- Конец главного баннера -->
+    </section>
+    <!-- Конец услуг -->
 
-        <!-- Начало услуг -->
-        <div style="width: 100%; height: fit-content; margin-top: 7vw; background-color: white; padding-top: 1vw; padding-bottom: 6vw;">
-            <div class="header">
-                Наши услуги
-            </div>
-            <div class="container-for-services">
-                <div class="column-for-info" style="align-items: end;">
-                    <div class="info-element">
-                        <span class="title-of-service">
-                            Бухгалтерские услуги для всех типов бизнеса
-                        </span>
-                        <span class="usual-text-of-service">
-                            Мы предлагаем готовые решения для постановки и автоматизации учета. Наша команда профессионалов в области финансового и юридического сопровождения поможет Вам сэкономить ресурсы и время на развитие бизнеса.
-                        </span>
-                    </div>
-                    <div class="info-element">
-                        <span class="title-of-service">
-                            Налоговое консультирование по вопросам бухгалтерского и налогового учета
-                        </span>
-                        <span class="usual-text-of-service">
-                            Трудно разбираться в нормативно-правовых актах и находить ответы на возникающие вопросы? Мы сделаем это за Вас и доступно объясним, как применять действующее законодательство на практике.
-                        </span>
-                    </div>
-                    <div class="info-element">
-                        <span class="title-of-service">
-                            Регистрация, ликвидация и реорганизация юридических лиц и ИП
-                        </span>
-                        <span class="usual-text-of-service">
-                            Создайте свой бизнес с нуля правильно: мы поможем с сопровождением процесса реорганизации, а также с быстрым закрытием действующего юридического лица или ИП.
-                        </span>
-                    </div>
-                    <div class="info-element">
-                        <span class="title-of-service">
-                            Обучающие курсы
-                        </span>
-                        <span class="usual-text-of-service">
-                            Мы предлагаем не только качественные услуги, но и возможность развития, делясь с Вами нашим опытом и знаниями. Кроме того, у нас доступны обучающие курсы, которые помогут Вам совершенствоваться и уверенно вести бизнес.
-                        </span>
-                    </div>
-                </div>
-                <div class="column-for-line">
-                    <div class="vertical-line"></div>
-                </div>
-                <div class="column-for-info" style="align-items: start;">
-                    <div class="info-element">
-                        <span class="title-of-service">
-                            Ведение учета ИП, физических лиц
-                        </span>
-                        <span class="usual-text-of-service">
-                            Если у Вас не хватает времени на ведение учета ИП, или возникла необходимость задекларировать доходы и предоставить пояснения контролирующим органам, мы профессионально и быстро решим эти задачи за Вас.
-                        </span>
-                    </div>
-                    <div class="info-element">
-                        <span class="title-of-service">
-                            Восстановление бухгалтерского и налогового учета
-                        </span>
-                        <span class="usual-text-of-service">
-                            Мы «реанимируем» Ваш бизнес, наладим текущие процессы и обеспечим быстрое и качественное восстановление бухгалтерского и налогового учета.
-                        </span>
-                    </div>
-                    <div class="info-element">
-                        <span class="title-of-service">
-                            Аудиторские услуги
-                        </span>
-                        <span class="usual-text-of-service">
-                            Наше сотрудничество с опытными и высококвалифицированными аудиторами позволяет нам оперативно реагировать на изменения законодательства, а также предоставить Вам доступ к консультациям и аудиторским услугам.
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Конец услуг -->
-
-        <!-- Начало преимуществ -->
-        <div class="header">Преимущества компании</div>
+    <!-- Начало преимуществ -->
+    <section>
+        <h2 class="header">Преимущества компании</h2>
         <div class="advantages">
-            <div class="advantage-card">
-                <div class="text">
-                    Гибкая ценовая политика
-                </div>
-                <img class="icon" 
-                    class="logo"
-                    src="./images/1.svg"/>
+            <article class="advantage-card">
+                <p class="text">Гибкая ценовая политика</p>
+                <img class="icon" src="./images/1.svg" alt="Гибкая ценовая политика"/>
                 <div class="line"></div>
-            </div>
-            <div class="advantage-card">
-                <div class="text">
-                    Индивидуальный подход к каждому клиенту
-                </div>
-                <img class="icon" 
-                    class="logo"
-                    src="./images/2.svg"/>
+            </article>
+            <article class="advantage-card">
+                <p class="text">Индивидуальный подход к каждому клиенту</p>
+                <img class="icon" src="./images/2.svg" alt="Индивидуальный подход"/>
                 <div class="line"></div>
-            </div>
-            <div class="advantage-card">
-                <div class="text">
-                    Сотрудничество с аудиторами и налоговыми консультантами
-                </div>
-                <img class="icon" 
-                    class="logo"
-                    src="./images/3.svg"/>
+            </article>
+            <article class="advantage-card">
+                <p class="text">Сотрудничество с аудиторами и налоговыми консультантами</p>
+                <img class="icon" src="./images/3.svg" alt="Сотрудничество с аудиторами"/>
                 <div class="line"></div>
-            </div>
-            <div class="advantage-card">
-                <div class="text">
-                    Внутренний аудит
-                </div>
-                <img class="icon" 
-                    class="logo"
-                    src="./images/4.svg"/>
+            </article>
+            <article class="advantage-card">
+                <p class="text">Внутренний аудит</p>
+                <img class="icon" src="./images/4.svg" alt="Внутренний аудит"/>
                 <div class="line"></div>
-            </div>
-            <div class="advantage-card">
-                <div class="text">
-                    Возможность аренды сервера для удаленой работы
-                </div>
-                <img class="icon" 
-                    class="logo"
-                    src="./images/5.svg"/>
+            </article>
+            <article class="advantage-card">
+                <p class="text">Возможность аренды сервера для удаленной работы</p>
+                <img class="icon" src="./images/5.svg" alt="Аренда сервера"/>
                 <div class="line"></div>
-            </div>
-            <div class="advantage-card">
-                <div class="text">
-                    Страхование профессиональной ответственности
-                </div>
-                <img class="icon" 
-                    class="logo"
-                    src="./images/6.svg"/>
+            </article>
+            <article class="advantage-card">
+                <p class="text">Страхование профессиональной ответственности</p>
+                <img class="icon" src="./images/6.svg" alt="Страхование"/>
                 <div class="line"></div>
-            </div>
+            </article>
         </div>
-        <!-- Конец преимуществ -->
-    </body>
+    </section>
+    <!-- Конец преимуществ -->
+</body>
 </html>

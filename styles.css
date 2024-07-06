@@ -360,3 +360,89 @@ body {
 }
 
 /* Конец карточек преимуществ */
+
+/* Начало заказа звонка */
+
+.container-for-call {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-for-call .call-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.container-for-call .picture-column {
+    width: 50%;
+    height: 100%;
+}
+
+.container-for-call .picture-column::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./images/back_for_call.png') no-repeat center center;
+    background-size: cover; /* Заполнение фона изображением */
+    opacity: 0.6; /* Прозрачность фона */
+    z-index: 1; /* Размещает псевдоэлемент позади содержимого */
+}
+
+.advantage-card .text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50%;
+    height: 50%;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.advantage-card .line {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin-top: auto;
+}
+
+/* Медиазапрос для маленьких экранов */
+@media (max-width: 450px) {
+    .advantage-card {
+        height: 125px;
+        width: 125px;
+    }
+
+    .advantage-card .icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .advantage-card .text {
+        font-size: 10px;
+    }
+
+    .advantages {
+        width: 90%;
+        gap: 5%;
+    }
+
+    .advantage-card .line {
+        height: 2px;
+    }
+}
+
+/* Конец заказа звонка */
