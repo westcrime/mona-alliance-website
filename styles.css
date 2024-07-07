@@ -444,5 +444,36 @@ body {
         height: 2px;
     }
 }
-
 /* Конец заказа звонка */
+
+
+/* карта виджет */
+
+.map {
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    margin-top: 10px;
+}
+
+.map a {
+    color:#eee;
+    font-size:12px;
+    position:absolute;
+}
+
+.map a:first-child {
+    top:0px;
+}
+
+.map a:last-child {
+    top:14px;
+}
+
+.map iframe {
+    width:100%;
+    height:400px;
+    position:relative;
+}
+
+/* карта виджет конец*/
