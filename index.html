@@ -39,7 +39,7 @@
                 <p class="usual-text">Опыт и профессионализм в поиске простых решений для сложных задач!</p>
             </div>
             <div class="row">
-                <button class="button" style="margin-top: -50px;">Связаться</button>
+                <button id="contactButton" class="button" style="margin-top: -50px;">Связаться</button>
             </div>
         </div>
     </section>
@@ -143,18 +143,9 @@
     <!-- Начало карты -->
     <div class="map">
         <a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps">Минск</a>
-        <a href="https://yandex.by/maps/157/minsk/house/Zk4Ycg9hTkYAQFtpfXR3cXVrZA==/?ll=27.481738%2C53.860980&utm_medium=mapframe&utm_source=maps&z=16.37">Проспект Дзержинского, 104А — Яндекс Карты</a>
-        <iframe src="https://yandex.by/map-widget/v1/?ll=27.481738%2C53.860980&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1MTczNTMwOTc4Ek7QkdC10LvQsNGA0YPRgdGMLCDQnNGW0L3RgdC6LCDQv9GA0LDRgdC_0LXQutGCINCU0LfRj9GA0LbRi9C90YHQutCw0LPQsCwgMTA00JAiCg2Y2ttBFaRxV0I%2C&z=16.37"></iframe>
+        <a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a><a href="https://yandex.by/maps/157/minsk/house/Zk4YcgBpS0IBQFtpfXR3cXVmbQ==/?indoorLevel=1&ll=27.479992%2C53.860978&utm_medium=mapframe&utm_source=maps&z=18">Проспект Дзержинского, 104А — Яндекс Карты</a>
+        <iframe src="https://yandex.by/map-widget/v1/?indoorLevel=1&ll=27.479992%2C53.860978&mode=whatshere&whatshere%5Bpoint%5D=27.479276%2C53.860959&whatshere%5Bzoom%5D=17&z=18"></iframe>
     </div>
-    <!-- Конец карты -->
-
-    <!-- <footer>
-        <div class="footer-content">
-            <p>© 2024 МОНА Альянс. Все права защищены.</p>
-            <p>Адрес: Проспект Дзержинского, 104А, Минск</p>
-            <p>Телефон: +375 (29) 391-01-02</p>
-        </div>
-    </footer> -->
 
     <footer class="footer">
         <div class="waves">
@@ -163,36 +154,39 @@
           <div class="wave" id="wave3"></div>
           <div class="wave" id="wave4"></div>
         </div>
-        <!-- <ul class="social-icon">
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a></li>
-        </ul>
-        <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-        </ul> -->
         <div class="footer-content">
             <p>220083, Республика Беларусь, г. Минск, пр-т Дзержинского, 104а, пом. 504</p>
             <p>Email: <a href="mailto:mona.bel.minsk@gmail.com" style="text-decoration: none; color: inherit;">mona.bel.minsk@gmail.com</a></p>
             <p>Тел: <a href="tel:+375293910102" style="text-decoration: none; color: inherit;">+375 (29) 391-01-02</a></p>
         </div>
         <p>&copy;2024 МОНА Альянс | Все права защищены</p>
-      </footer>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+    </footer>
+
+    <div id="contactForm" style="display: none; width: 500px; height: 600px;">
+        <button id="closeButton" style="float: right;">X</button>
+        <form>
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name">
+            <label for="phone">Номер телефона</label>
+            <input type="text" id="phone" name="phone" placeholder="+375 (__) ___-__-__">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email">
+            <button type="submit">Заказать звонок</button>
+        </form>
+    </div>
+    <!-- <button id="contactButton">Связаться</button> -->
+
+    <script>
+        document.getElementById('contactButton').addEventListener('click', function() {
+            document.getElementById('contactForm').style.display = 'block';
+        });
+
+        document.getElementById('closeButton').addEventListener('click', function() {
+            document.getElementById('contactForm').style.display = 'none';
+        });
+    </script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

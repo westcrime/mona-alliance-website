@@ -460,7 +460,8 @@ body {
     position:relative;
     overflow:hidden;
     width:100%;
-    margin-top: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .map a {
@@ -511,7 +512,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
 }
 
 .social-icon,
@@ -616,4 +616,40 @@ body {
   100% {
     background-positon-x: 0px;
   }
+}
+
+
+#contactForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contactForm input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#contactForm button[type="submit"] {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#closeButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
 }
