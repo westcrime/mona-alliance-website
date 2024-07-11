@@ -169,7 +169,7 @@ section {
 .main-banner .container {
     margin-top: 10%;
     margin-bottom: 5%;
-    height: 85%;
+    height: 100%;
     width: 75%;
     margin-left: 8%;
     display: flex;
@@ -190,15 +190,15 @@ section {
 }
 
 .main-banner .container .row .name-text {
-    font-size: 3rem;
+    font-size: 2.75rem;
 }
 
 .main-banner .container .row .secondary-name-text {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 .main-banner .container .row .usual-text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 /* Медиазапрос для маленьких экранов */
