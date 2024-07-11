@@ -2,6 +2,21 @@
     --bg-color: #F7F7F7;
     --main-color: white;
     --secondary-color: #213966;
+    font-size: 18px;
+}
+
+/* Медиазапрос для маленьких экранов */
+@media (max-width: 950px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+/* Медиазапрос для маленьких экранов */
+@media (max-width: 450px) {
+    :root {
+        font-size: 10px;
+    }
 }
 
 * {
@@ -15,6 +30,14 @@ body {
     background-color: var(--bg-color);
 }
 
+section {
+    width: 100%; 
+    height: fit-content; 
+    background-color: var(--bg-color); 
+    padding-top: 1vw; 
+    padding-bottom: 6vw;
+}
+
 .button {
   background-color: var(--secondary-color);
   border-radius: 0;
@@ -24,7 +47,7 @@ body {
   cursor: pointer;
   display: inline-block;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   height: 40px;
   width: fit-content;
@@ -45,7 +68,6 @@ body {
 
 @media (max-width: 450px) {
     .button {
-        font-size: 10px;
         height: 24px;
         padding: 7px 12px;
         line-height: 0px;
@@ -58,19 +80,13 @@ body {
 }
 
 .header {
-    margin-top: 7vw;
-    margin-bottom: 7vw;
+    margin-top: 4vw;
+    margin-bottom: 6vw;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.25rem;
     font-weight: 600;
     margin-left: auto;
     margin-right: auto;
-}
-
-@media (max-width: 450px) {
-    .header {
-        font-size: 20px;
-    }
 }
 
 /* Навбар */
@@ -81,7 +97,7 @@ body {
     display: flex;
     justify-content: space-between; /* Расположить элементы по краям контейнера */
     align-items: center; /* Центрирование по вертикали */
-    height: 125px;
+    height: 100px;
 }
 
 .navbar .logo {
@@ -109,26 +125,29 @@ body {
 }
 
 .navbar .right-side-part .left-column .navbar-text {
-    font-size: 28px;
+    font-size: 1.5rem;
     font-family: 'Sansation Light';
     text-align: end;
     text-decoration: underline;
 }
 
 .navbar-number {
-    font-size: 28px;
+    font-size: 1.5rem;
     font-family: 'Sansation Light';
     text-align: end;
+}
+
+/* Медиазапрос для маленьких экранов */
+@media (max-width: 950px) {
+    .navbar {
+        height: 75px; /* Высота навбара увеличивается на маленьких экранах */
+    }
 }
 
 /* Медиазапрос для маленьких экранов */
 @media (max-width: 450px) {
     .navbar {
         height: 50px; /* Высота навбара увеличивается на маленьких экранах */
-    }
-
-    .navbar .right-side-part .left-column .navbar-text .navbar-number{
-        font-size: 14px; /* Увеличение размера шрифта на маленьких экранах */
     }
 }
 
@@ -143,19 +162,8 @@ body {
     display: flex;
     align-items: center; /* Центрирование по вертикали */
     justify-content: start;
-}
-
-.main-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: url('./images/back.png') no-repeat center center;
     background-size: cover; /* Заполнение фона изображением */
-    opacity: 0.6; /* Прозрачность фона */
-    z-index: 1; /* Размещает псевдоэлемент позади содержимого */
 }
 
 .main-banner .container {
@@ -182,33 +190,21 @@ body {
 }
 
 .main-banner .container .row .name-text {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .main-banner .container .row .secondary-name-text {
-    font-size: 36px;
+    font-size: 2rem;
 }
 
 .main-banner .container .row .usual-text {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 /* Медиазапрос для маленьких экранов */
 @media (max-width: 450px) {
     .main-banner {
         height: 350px;
-    }
-
-    .main-banner .container .row .name-text {
-        font-size: 28px;
-    }
-    
-    .main-banner .container .row .secondary-name-text {
-        font-size: 16px;
-    }
-    
-    .main-banner .container .row .usual-text {
-        font-size: 12px;
     }
 }
 
@@ -260,12 +256,12 @@ body {
 }
 
 .container-for-services .info-element .title-of-service {
-    font-size: 28px;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 
 .container-for-services .info-element .usual-text-of-service {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 /* Медиазапрос для маленьких экранов */
@@ -278,15 +274,6 @@ body {
     .container-for-services .info-element {
         width: 95%;
         gap: 2vw;
-    }
-    
-    .container-for-services .info-element .title-of-service {
-        font-size: 14px;
-        font-weight: 700;
-    }
-    
-    .container-for-services .info-element .usual-text-of-service {
-        font-size: 10px;
     }
 }
 
@@ -327,7 +314,7 @@ body {
     text-align: center;
     margin-top: 50%;
     height: 50%;
-    font-size: 22px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -341,19 +328,37 @@ body {
 }
 
 /* Медиазапрос для маленьких экранов */
+@media (max-width: 950px) {
+    .advantage-card {
+        height: 200px;
+        width: 200px;
+    }
+
+    .advantage-card .icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .advantages {
+        width: 90%;
+        gap: 5%;
+    }
+
+    .advantage-card .line {
+        height: 2px;
+    }
+}
+
+/* Медиазапрос для маленьких экранов */
 @media (max-width: 450px) {
     .advantage-card {
-        height: 125px;
-        width: 125px;
+        height: 150px;
+        width: 150px;
     }
 
     .advantage-card .icon {
         height: 30px;
         width: 30px;
-    }
-
-    .advantage-card .text {
-        font-size: 10px;
     }
 
     .advantages {
@@ -371,86 +376,58 @@ body {
 /* Начало заказа звонка */
 
 .container-for-call {
+    background-color: var(--bg-color);
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-around;
-    width: 70%;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    background: url('./images/back2.jpg') no-repeat center center;
+    background-size: cover; /* Заполнение фона изображением */
+    height: 100%;
+    width: 100%;
+    height: 500px;
 }
 
 .container-for-call .call-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 50%;
-    height: 100%;
+    align-items: start;
+    justify-content: space-between;
+    margin-right: 45%;
+    margin-left: 15%;
+    width: 40%;
+    gap: 10vw;
 }
 
-.container-for-call .picture-column {
-    width: 50%;
-    height: 100%;
-}
-
-.container-for-call .picture-column::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('./images/back_for_call.png') no-repeat center center;
-    background-size: cover; /* Заполнение фона изображением */
-    opacity: 0.6; /* Прозрачность фона */
-    z-index: 1; /* Размещает псевдоэлемент позади содержимого */
-}
-
-.advantage-card .text {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 50%;
-    height: 50%;
-    font-size: 22px;
+.container-for-call .call-column h2 {
+    font-size: 1.75rem;
     font-weight: 500;
 }
 
-.advantage-card .line {
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    height: 3px;
-    background-color: var(--secondary-color);
-    margin-top: auto;
-}
-
-/* Медиазапрос для маленьких экранов */
 @media (max-width: 450px) {
-    .advantage-card {
-        height: 125px;
-        width: 125px;
+    .container-for-call {
+        height: 300px;
     }
 
-    .advantage-card .icon {
-        height: 30px;
-        width: 30px;
-    }
-
-    .advantage-card .text {
-        font-size: 10px;
-    }
-
-    .advantages {
-        width: 90%;
-        gap: 5%;
-    }
-
-    .advantage-card .line {
-        height: 2px;
+    .container-for-call .call-column {
+        width: 65%;
+        margin-right: 30%;
+        margin-left: 5%;
     }
 }
+
+@media (max-width: 950px) {
+    .container-for-call {
+        height: 400px;
+    }
+
+    .container-for-call .call-column {
+        width: 65%;
+        margin-right: 30%;
+        margin-left: 5%;
+    }
+}
+
 /* Конец заказа звонка */
 
 
@@ -465,17 +442,17 @@ body {
 }
 
 .map a {
-    color:#eee;
-    font-size:12px;
-    position:absolute;
+    color: #eee;
+    font-size: 0.75rem;
+    position: absolute;
 }
 
 .map a:first-child {
-    top:0px;
+    top: 0px;
 }
 
 .map a:last-child {
-    top:14px;
+    top: 14px;
 }
 
 .map iframe {
@@ -557,7 +534,7 @@ body {
 
 .footer p {
   color: #fff;
-  margin: 15px 0 10px 0;
+  margin: 15px 0 10px 10px;
   font-size: 1rem;
   font-weight: 300;
 }
@@ -618,31 +595,63 @@ body {
   }
 }
 
+/* Начало формы */
 
 #contactForm {
+    width: 50%; 
+    height: fit-content;
     position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     top: 50%;
+    border-radius: 5px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    background: var(--main-color);
+    padding: 2%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    animation: fadeIn 0.3s ease;
+    z-index: 20;
 }
 
 #contactForm label {
-    display: block;
-    margin-bottom: 5px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 0.5vh;
+}
+
+.form-container {
+    width: 85%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #contactForm input {
     width: 100%;
-    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-bottom: 1.5vh;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contactForm input:focus, 
+#contactForm input:hover {
+    border-color: var(--secondary-color);
+    outline: none;
 }
 
 #contactForm button[type="submit"] {
-    background: #007BFF;
-    color: #fff;
+    background: var(--secondary-color);
+    color: var(--main-color);
     border: none;
+    font-size: 1rem;
+    margin-top: 3vw;
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -651,5 +660,25 @@ body {
     border: none;
     background: none;
     cursor: pointer;
-    font-size: 20px;
+    margin-bottom: 2vw;
+    font-size: 2rem;
+    align-self: flex-end;
 }
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+@media (max-width: 450px) {
+    #contactForm {
+        width: 70%;
+    }
+}
+
+/* Конец формы */

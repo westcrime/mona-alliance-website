@@ -39,14 +39,14 @@
                 <p class="usual-text">Опыт и профессионализм в поиске простых решений для сложных задач!</p>
             </div>
             <div class="row">
-                <button id="contactButton" class="button" style="margin-top: -50px;">Связаться</button>
+                <button id="contactButton" class="button" style="margin-top: -50px;">Оставить заявку</button>
             </div>
         </div>
     </section>
     <!-- Конец главного баннера -->
 
     <!-- Начало услуг -->
-    <section style="width: 100%; height: fit-content; background-color: white; padding-top: 1vw; padding-bottom: 6vw;">
+    <section style="background-color: white;">
         <h2 class="header">Наши услуги</h2>
         <div class="container-for-services">
             <div class="column-for-info" style="align-items: end;">
@@ -104,7 +104,7 @@
 
     <!-- Начало преимуществ -->
     <section>
-        <h2 class="header">Преимущества компании</h2>
+        <h2 class="header" style="margin-bottom: 0;">Преимущества компании</h2>
         <div class="advantages">
             <article class="advantage-card">
                 <p class="text">Гибкая ценовая политика</p>
@@ -140,6 +140,19 @@
     </section>
     <!-- Конец преимуществ -->
 
+    <!-- Начало заказа звонка -->
+    <section style="background-color: white;">
+        <div class="header">Оставить заявку для консультации</div>
+        <div class="container-for-call">
+            <div class="call-column">
+                <h2>Укажите контактные данные, и мы свяжемся с вами для консультирования</h2>
+                <button id="contactButton2" class="button">Оставить заявку</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Конец заказа звонка -->
+
     <!-- Начало карты -->
     <div class="map">
         <a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps">Минск</a>
@@ -162,27 +175,43 @@
         <p>&copy;2024 МОНА Альянс | Все права защищены</p>
     </footer>
 
-    <div id="contactForm" style="display: none; width: 500px; height: 600px;">
-        <button id="closeButton" style="float: right;">X</button>
-        <form action="http://localhost:3000/form" method="post">
+    <!-- Overlay -->
+    <div id="overlay" style="display: none"></div>
+
+    <div id="contactForm" style="display: none;">
+        <button id="closeButton" style="background: none; border: none; font-size: 20px;">✖</button>
+        <h2 style="margin-bottom: 10%; font-size: 1.5rem; width: 80%;">Укажите ваши контактные данные</h2>
+        <form action="http://localhost:3000/form" class="form-container" method="post">
             <label for="name">Ваше имя</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" class="form-input">
             <label for="phone">Номер телефона</label>
-            <input type="text" id="phone" name="phone" placeholder="+375 (__) ___-__-__">
+            <input type="text" id="phone" name="phone" placeholder="+375 (__) ___-__-__" class="form-input">
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Email">
-            <button type="submit">Заказать звонок</button>
+            <input type="text" id="email" name="email" placeholder="Email" class="form-input">
+            <button type="submit" class="submit-button">Заказать звонок</button>
         </form>
     </div>
     <!-- <button id="contactButton">Связаться</button> -->
 
     <script>
         document.getElementById('contactButton').addEventListener('click', function() {
-            document.getElementById('contactForm').style.display = 'block';
+            document.getElementById('contactForm').style.display = 'flex';
+            document.getElementById('overlay').style.display = 'block';
+        });
+
+        document.getElementById('contactButton2').addEventListener('click', function() {
+            document.getElementById('contactForm').style.display = 'flex';
+            document.getElementById('overlay').style.display = 'block';
         });
 
         document.getElementById('closeButton').addEventListener('click', function() {
             document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
         });
     </script>
     
