@@ -620,7 +620,7 @@ section {
     font-size: 18.5px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
     .contact-info {
         flex-direction: column;
         font-size: 15px;
