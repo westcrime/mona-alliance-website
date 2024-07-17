@@ -83,8 +83,8 @@ section {
     margin-top: 4vw;
     margin-bottom: 6vw;
     text-align: center;
-    font-size: 2.25rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     margin-left: auto;
     margin-right: auto;
 }
@@ -208,7 +208,8 @@ section {
 /* Медиазапрос для маленьких экранов */
 @media (max-width: 450px) {
     .main-banner {
-        height: 350px;
+        height: 300px;
+        background: url('./images/cropped_back.png') no-repeat center center;
     }
 }
 
@@ -261,7 +262,7 @@ section {
 
 .container-for-services .info-element .title-of-service {
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .container-for-services .info-element .usual-text-of-service {
@@ -269,10 +270,17 @@ section {
 }
 
 /* Медиазапрос для маленьких экранов */
+
+@media (max-width: 950px) {
+    .container-for-services .column-for-line .vertical-line {
+        height: 850px;
+    }
+}
+
 @media (max-width: 450px) {
     .container-for-services .column-for-line .vertical-line {
         width: 1px;
-        height: 750px;
+        height: 700px;
     }
     
     .container-for-services .info-element {
@@ -400,7 +408,7 @@ section {
     margin-right: 45%;
     margin-left: 15%;
     width: 40%;
-    gap: 10vw;
+    gap: 7vw;
 }
 
 .container-for-call .call-column h2 {
