@@ -269,12 +269,12 @@ section {
 }
 
 .container-for-services .info-element .title-of-service {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-weight: 900;
 }
 
 .container-for-services .info-element .usual-text-of-service {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 /* Медиазапрос для маленьких экранов */
@@ -288,7 +288,7 @@ section {
 @media (max-width: 450px) {
     .container-for-services .column-for-line .vertical-line {
         width: 1px;
-        height: 800px;
+        height: 850px;
     }
     
     .container-for-services .info-element {
